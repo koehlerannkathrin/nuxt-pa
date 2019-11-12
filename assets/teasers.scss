@@ -4,8 +4,16 @@
 
 .teaser-content {
     margin-bottom: 80px;
+    padding-bottom: 22px;
+    border-bottom: 0.5px solid grey;
 
     h3 {
         margin-top: 10px;
     }
+}
+
+.teaser-img {
+  img {
+    border-radius: 10px;
+  }
 }
