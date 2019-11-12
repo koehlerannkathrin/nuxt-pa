@@ -1,0 +1,9 @@
+query Teasers {
+  teasers {
+    headline
+    content
+    image {
+      url
+    }
+  }
+}
