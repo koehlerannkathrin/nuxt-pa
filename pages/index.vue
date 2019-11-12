@@ -1,28 +1,37 @@
 <template>
-  <div class="container">
-    
-  </div>
+  <section>
+
+
+  <b-container class="bv-example-row">
+
+    <h1>Headline 1</h1>
+      <b-row>
+        <b-col>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et </b-col>
+        <b-col>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et </b-col>
+        <b-col>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et </b-col>
+      </b-row>
+      <b-row>
+        <b-col class="margin">
+           <nuxt-link to="/teasers">Hier</nuxt-link> gibt es einge Artikel.
+        </b-col>
+      </b-row>
+  </b-container>
+  <!-- <ImgFluid /> -->
+  </section>
 </template>
 
 <script>
-import Logo from '~/components/Logo.vue'
-
-export default {
-  components: {
-    Logo
-  }
-}
+// import ImgFluid from '~/components/ImgFluid.vue'
+//
+// export default {
+//   components: {
+//     ImgFluid
+//   }
+// }
 </script>
 
 <style>
-.container {
-  margin: 0 auto;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
+
 
 .title {
   font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,

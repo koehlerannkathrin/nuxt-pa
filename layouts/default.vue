@@ -3,7 +3,7 @@
     <Header />
 
       <div class="uk-section uk-section-default">
-      <div class="uk-container uk-container-large">   
+      <div class="uk-container uk-container-medium">
 
        <nuxt />
       </div>
@@ -12,8 +12,8 @@
 </template>
 
 <script>
-import Header from '~/components/Header.vue'  
-export default {  
+import Header from '~/components/Header.vue'
+export default {
   components: {
     Header
   }
