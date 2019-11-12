@@ -1,0 +1,14 @@
+query Teaser($id: ID!) {  
+  teaser(id: $id) {
+    id
+    headline
+    groups {
+      id
+      name
+      description
+      image {
+        url
+      }
+    }
+  }
+}
