@@ -1,5 +1,6 @@
 query Teasers {
   teasers {
+    id
     headline
     content
     image {
