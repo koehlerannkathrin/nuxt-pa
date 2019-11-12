@@ -12,6 +12,7 @@ import { setContext, getLocation, getRouteData, normalizeError } from './utils'
 /* Plugins */
 
 import nuxt_plugin_bootstrapvue_68269688 from 'nuxt_plugin_bootstrapvue_68269688' // Source: ./bootstrap-vue.js (mode: 'all')
+import nuxt_plugin_apollomodule_7ed2bb4e from 'nuxt_plugin_apollomodule_7ed2bb4e' // Source: ./apollo-module.js (mode: 'all')
 import nuxt_plugin_uikit_47fa8f2a from 'nuxt_plugin_uikit_47fa8f2a' // Source: ../plugins/uikit.js (mode: 'client')
 
 // Component: <ClientOnly>
@@ -148,6 +149,10 @@ async function createApp (ssrContext) {
 
   if (typeof nuxt_plugin_bootstrapvue_68269688 === 'function') {
     await nuxt_plugin_bootstrapvue_68269688(app.context, inject)
+  }
+
+  if (typeof nuxt_plugin_apollomodule_7ed2bb4e === 'function') {
+    await nuxt_plugin_apollomodule_7ed2bb4e(app.context, inject)
   }
 
   if (process.client && typeof nuxt_plugin_uikit_47fa8f2a === 'function') {
