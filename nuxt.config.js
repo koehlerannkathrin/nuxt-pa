@@ -23,6 +23,7 @@ export default {
   ** Global CSS
   */
   css: [
+    '@/assets/main.scss',
     "node_modules/uikit/dist/css/uikit.min.css",
     "node_modules/uikit/dist/css/uikit.css",
   ],
