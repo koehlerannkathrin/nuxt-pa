@@ -1,33 +1,34 @@
+
 <template>
-  <section>
-
-
-  <b-container class="bv-example-row">
-
-    <h1>Headline 1</h1>
+<b-container fluid class="container-fluid">
+  <div class="image-fluid">
+      <b-img src="~/assets/images/placeholder-fluid@2x.png" fluid alt="Responsive image"></b-img>
+  </div>
+  <b-container class="container-content">
+    <b-col md="8">
+      <h1>Headline 1</h1>
+      </b-col>
+      <b-col md="10">
+        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et </p>
+        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur </p>
+      </b-col>
       <b-row>
-        <b-col>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et </b-col>
-        <b-col>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et </b-col>
-        <b-col>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et </b-col>
-      </b-row>
-      <b-row>
-        <b-col class="margin">
-           <nuxt-link to="/teasers">Hier</nuxt-link> gibt es einge Artikel.
-        </b-col>
-      </b-row>
-  </b-container>
-  <!-- <ImgFluid /> -->
-  </section>
+      <b-col>
+        <b-img center thumbnail fluid src="https://picsum.photos/250/250/?image=54" alt="Image 1"></b-img>
+      </b-col>
+      <b-col>
+        <b-img center thumbnail fluid src="https://picsum.photos/250/250/?image=58" alt="Image 2"></b-img>
+      </b-col>
+      <b-col>
+        <b-img center thumbnail fluid src="https://picsum.photos/250/250/?image=59" alt="Image 3"></b-img>
+      </b-col>
+    </b-row>
+    </b-container>
+  </b-container fluid>
 </template>
 
+
 <script>
-// import ImgFluid from '~/components/ImgFluid.vue'
-//
-// export default {
-//   components: {
-//     ImgFluid
-//   }
-// }
 </script>
 
 <style>
