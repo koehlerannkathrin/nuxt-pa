@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <b-container class="container-content">
     <b-col md="8">
         // Search articles
         <form class="search-field">
@@ -10,7 +10,7 @@
         <!-- <div class="teaser-content" v-for="teaser in filteredList" :key="teaser"> -->
           <div class="teaser-content" v-for="(teaser, id) in filteredList" :key="id">
           <div class="teaser-img">
-              <img :src="'http://localhost:1337/' + teaser.image.url" alt="">
+              <img :src="'https://strapi-pa-heroku.herokuapp.com/' + teaser.image.url" alt="">
               <!-- <canvas width="200" height="200"></canvas> -->
           </div>
             <h3 class="">{{ teaser.headline }}</h3>
@@ -25,7 +25,7 @@
        <p>No teasers found</p>
      </div> -->
 
-  </div>
+  </b-container>
 </template>
 
 <script>

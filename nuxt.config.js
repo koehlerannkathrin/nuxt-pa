@@ -47,10 +47,10 @@ export default {
     '@nuxtjs/apollo',
   ],
 
-  apollo: {  
+  apollo: {
     clientConfigs: {
       default: {
-        httpEndpoint: 'http://localhost:1337/graphql'
+        httpEndpoint: 'https://strapi-pa-heroku.herokuapp.com/graphql'
       }
     }
   },
