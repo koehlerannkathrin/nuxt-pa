@@ -2,7 +2,7 @@
 <template>
 <b-container fluid class="container-fluid">
   <div class="image-fluid">
-      <b-img src="~/assets/images/placeholder-fluid@2x.png" fluid alt="Responsive image"></b-img>
+      <b-img src="~/assets/images/placeholder-fluid@2x.jpg" fluid alt="Responsive image"></b-img>
   </div>
   <b-container class="container-content">
     <b-col md="8">
@@ -14,13 +14,13 @@
       </b-col>
       <b-row>
       <b-col>
-        <b-img center thumbnail fluid src="https://picsum.photos/250/250/?image=54" alt="Image 1"></b-img>
+        <b-img center thumbnail fluid src="~/assets/images/martin-widenka-c0ViYpsmUrg-unsplash.jpg" alt="Image 1"></b-img>
       </b-col>
       <b-col>
-        <b-img center thumbnail fluid src="https://picsum.photos/250/250/?image=58" alt="Image 2"></b-img>
+        <b-img center thumbnail fluid src="~/assets/images/dose-juice-sTPy-oeA3h0-unsplash.jpg" alt="Image 2"></b-img>
       </b-col>
       <b-col>
-        <b-img center thumbnail fluid src="https://picsum.photos/250/250/?image=59" alt="Image 3"></b-img>
+        <b-img center thumbnail fluid src="~/assets/images/danist-n-3Pn7Ybe-s-unsplash.jpg" alt="Image 3"></b-img>
       </b-col>
     </b-row>
     </b-container>
