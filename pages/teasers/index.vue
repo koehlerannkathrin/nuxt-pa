@@ -1,7 +1,7 @@
 <template>
   <b-container class="container-content">
     <b-col md="8">
-        // Search articles
+        // Search articles/teasers
         <form class="search-field">
             <span ></span>
             <input class="" v-model="query" type="search" placeholder="Search...">
@@ -12,7 +12,7 @@
           </div>
             <h3 class="">{{ teaser.headline }}</h3>
             <p>{{ teaser.content }}</p>
-            // Link to the teasers using router-link
+            // Link to the goups using router-link
             <router-link :to="{ name: 'teasers-id', params: { id: teaser.id }}" tag="a" class="">See acrticles </router-link>
         </div>
       </b-col>
