@@ -6,12 +6,9 @@
             <span ></span>
             <input class="" v-model="query" type="search" placeholder="Search...">
         </form>
-
-        <!-- <div class="teaser-content" v-for="teaser in filteredList" :key="teaser"> -->
           <div class="teaser-content" v-for="(teaser, id) in filteredList" :key="id">
           <div class="teaser-img">
               <img :src="'https://strapi-pa-heroku.herokuapp.com/' + teaser.image.url" alt="">
-              <!-- <canvas width="200" height="200"></canvas> -->
           </div>
             <h3 class="">{{ teaser.headline }}</h3>
             <p>{{ teaser.content }}</p>
@@ -19,12 +16,6 @@
             <router-link :to="{ name: 'teasers-id', params: { id: teaser.id }}" tag="a" class="">See acrticles </router-link>
         </div>
       </b-col>
-      <!-- // If no teasers have been found
-      <div class="" v-if="filteredList.length == 0">
-       <img src="https://assets-ouch.icons8.com/preview/19/52de2377-696e-4194-8c63-0a81aef60b4f.png" height="200" width="200">
-       <p>No teasers found</p>
-     </div> -->
-
   </b-container>
 </template>
 
@@ -35,7 +26,6 @@ import teasersQuery from '~/apollo/queries/teaser/teasers'
 export default {
   data() {
     return {
-      // Initialize an empty teasers variabkle
       teasers: [],
       query: ''
     }
@@ -47,7 +37,7 @@ export default {
     }
   },
   computed: {
-    // Search system
+    // Search-function
     filteredList() {
       return this.teasers.filter(teaser => {
         return teaser.headline.toLowerCase().includes(this.query.toLowerCase())
