@@ -8,7 +8,7 @@
         </form>
           <div class="teaser-content" v-for="(teaser, id) in filteredList" :key="id">
           <div class="teaser-img">
-              <img :src="'https://strapi-pa-heroku.herokuapp.com/' + teaser.image.url" alt="">
+              <img :src="'https://strapi-pa-heroku.herokuapp.com' + teaser.image.url" alt="">
           </div>
             <h3 class="">{{ teaser.headline }}</h3>
             <p>{{ teaser.content }}</p>
