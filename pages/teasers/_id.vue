@@ -10,7 +10,7 @@
           <div v-for="(group, id) in teaser.groups" :key="id" class="uk-margin">
               <div class="uk-card uk-card-default">
                   <div class="group-img">
-                      <img :src="'https://strapi-pa-heroku.herokuapp.com/' + group.image.url" alt="" />
+                      <img :src="'https://strapi-hcms-backend.herokuapp.com' + group.image.url" alt="" />
                   </div>
                   <div class="uk-card-body">
                       <h3 class="uk-card-title">{{ group.name }} </h3>
