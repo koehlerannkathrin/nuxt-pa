@@ -50,7 +50,7 @@ export default {
   apollo: {
     clientConfigs: {
       default: {
-        httpEndpoint: 'http://strapi-hcms-backend.herokuapp.com'
+        httpEndpoint: 'https://strapi-pa-heroku.herokuapp.com/graphql'
       }
     }
   },
